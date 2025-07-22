@@ -381,10 +381,11 @@ footer {
 }
 
 .about-icon-svg {
-  width: 40px;
-  height: 40px;
+  font-size: 2.2rem;
   margin-bottom: 0.5rem;
-  opacity: 0.85;
+  opacity: 1;
+  width: auto;
+  height: auto;
 }
 
 @media (max-width: 900px) {
