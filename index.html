@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PsyHelp.Click - Профессиональная психологическая помощь онлайн</title>
+    <meta name="description" content="Автоматизированная психологическая помощь с использованием ИИ. Конфиденциальные онлайн консультации, индивидуальный подход, доступные цены. Запишитесь на консультацию прямо сейчас!" />
+    <meta name="author" content="PsyHelp.Click" />
+    <meta name="keywords" content="психолог онлайн, психологическая помощь, консультации психолога, ИИ психология, онлайн терапия" />
+    
+    <meta property="og:title" content="PsyHelp.Click - Профессиональная психологическая помощь онлайн" />
+    <meta property="og:description" content="Автоматизированная психологическая помощь с использованием ИИ. Конфиденциальные консультации 24/7." />
+    <meta property="og:type" content="website" />
+    
+    <link rel="stylesheet" href="static/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="sticky-header">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-3">
+                    <img src="static/images/logo.png" alt="PsyHelp.Click Logo" class="h-12 w-12">
+                    <div>
+                        <h1 class="text-2xl font-bold gradient-text">PsyHelp.Click</h1>
+                        <p class="text-sm text-muted">Психологическая поддержка онлайн</p>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="nav-link" data-section="about">О Нас</a>
+                    <a href="#consultations" class="nav-link" data-section="consultations">Консультации</a>
+                    <a href="#directions" class="nav-link" data-section="directions">Направления</a>
+                    <a href="#contacts" class="nav-link" data-section="contacts">Контакты</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile menu -->
+            <div class="mobile-menu hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="#about" class="mobile-nav-link" data-section="about">О Нас</a>
+                    <a href="#consultations" class="mobile-nav-link" data-section="consultations">Консультации</a>
+                    <a href="#directions" class="mobile-nav-link" data-section="directions">Направления</a>
+                    <a href="#contacts" class="mobile-nav-link" data-section="contacts">Контакты</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-20">
+        <!-- About Section -->
+        <section id="about" class="section-padding bg-gradient">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-6 gradient-text">О PsyHelp.Click</h2>
+                    <div class="max-w-4xl mx-auto space-y-6 text-lg text-foreground leading-relaxed">
+                        <p>
+                            Мы объединили многолетний опыт профессиональных психологов с возможностями искусственного интеллекта, 
+                            чтобы сделать психологическую помощь более доступной и эффективной для каждого.
+                        </p>
+                        <p>
+                            Наша платформа основана на принципах доверия, гибкости и индивидуального подхода. 
+                            Мы понимаем, что каждый человек уникален, и поэтому предлагаем персонализированную поддержку, 
+                            адаптированную под ваши потребности и жизненные обстоятельства.
+                        </p>
+                        <p>
+                            Технологии ИИ позволяют нам обеспечить круглосуточную доступность, мгновенную обратную связь 
+                            и непрерывное отслеживание вашего прогресса, при этом сохраняя человечность и эмпатию в каждом взаимодействии.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="psychology-card text-center">
+                        <div class="advantage-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h3 class="font-semibold">Профессиональное консультирование</h3>
+                    </div>
+                    <div class="psychology-card text-center">
+                        <div class="advantage-icon">
+                            <i class="fas fa-ruble-sign"></i>
+                        </div>
+                        <h3 class="font-semibold">Доступные цены</h3>
+                    </div>
+                    <div class="psychology-card text-center">
+                        <div class="advantage-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3 class="font-semibold">Высокая доступность 24/7</h3>
+                    </div>
+                    <div class="psychology-card text-center">
+                        <div class="advantage-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="font-semibold">100% конфиденциальность</h3>
+                    </div>
+                    <div class="psychology-card text-center">
+                        <div class="advantage-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="font-semibold">Отслеживание прогресса</h3>
+                    </div>
+                    <div class="psychology-card text-center">
+                        <div class="advantage-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="font-semibold">Персонализированные рекомендации</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Consultations Section -->
+        <section id="consultations" class="section-padding bg-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-6 gradient-text">Консультации</h2>
+                    <h3 class="text-xl text-foreground max-w-3xl mx-auto leading-relaxed">
+                        Онлайн формат консультаций обеспечивает максимальную конфиденциальность, 
+                        гибкость в планировании и комфорт привычной обстановки. Выберите наиболее 
+                        подходящий для вас способ общения.
+                    </h3>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="consultation-circle mx-auto" title="Удобное общение в текстовом формате в любое время">
+                        <i class="fas fa-comments consultation-icon"></i>
+                        <h3 class="font-semibold text-lg mb-1">Чат</h3>
+                        <p class="text-sm opacity-80">Telegram / Веб-сайт</p>
+                    </div>
+                    <div class="consultation-circle mx-auto" title="Живое общение с психологом по видеосвязи">
+                        <i class="fas fa-video consultation-icon"></i>
+                        <h3 class="font-semibold text-lg mb-1">Онлайн сессия</h3>
+                        <p class="text-sm opacity-80">Аудио/Видео</p>
+                    </div>
+                    <div class="consultation-circle mx-auto" title="Общение голосовыми сообщениями для большей близости">
+                        <i class="fas fa-microphone consultation-icon"></i>
+                        <h3 class="font-semibold text-lg mb-1">Голосовые сообщения</h3>
+                        <p class="text-sm opacity-80">Telegram</p>
+                    </div>
+                    <div class="consultation-circle mx-auto" title="Подробные письменные консультации и рекомендации">
+                        <i class="fas fa-envelope consultation-icon"></i>
+                        <h3 class="font-semibold text-lg mb-1">Email</h3>
+                        <p class="text-sm opacity-80">Электронная почта</p>
+                    </div>
+                </div>
+
+                <div class="mt-16 text-center">
+                    <p class="text-lg text-foreground mb-8">
+                        Все форматы консультаций включают персональные рекомендации, 
+                        домашние задания и отслеживание прогресса
+                    </p>
+                    <button class="cta-button">
+                        Начать консультацию
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Directions Section -->
+        <section id="directions" class="section-padding bg-light">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-6 gradient-text">Направления работы</h2>
+                    <p class="text-xl text-foreground max-w-3xl mx-auto">
+                        Мы предлагаем различные форматы психологической поддержки, 
+                        подходящие для разных жизненных ситуаций и предпочтений
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="psychology-card direction-card">
+                        <div class="text-center mb-6">
+                            <div class="direction-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Индивидуальные консультации</h3>
+                            <p class="text-foreground-muted">Персональная работа один на один с психологом</p>
+                        </div>
+
+                        <div class="flex-grow">
+                            <h4 class="font-semibold mb-3 text-primary">Преимущества:</h4>
+                            <ul class="space-y-2 mb-6">
+                                <li class="advantage-item">
+                                    <span class="bullet">•</span>
+                                    <span>Полная конфиденциальность</span>
+                                </li>
+                                <li class="advantage-item">
+                                    <span class="bullet">•</span>
+                                    <span>Индивидуальный подход</span>
+                                </li>
+                                <li class="advantage-item">
+                                    <span class="bullet">•</span>
+                                    <span>Глубокая проработка личных вопросов</span>
+                                </li>
+                                <li class="advantage-item">
+                                    <span class="bullet">•</span>
+                                    <span>Гибкий график сессий</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="direction-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Длительность:</span>
+                                <span class="detail-value">50-60 минут</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Формат:</span>
+                                <span class="detail-value">Любой удобный формат общения</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="psychology-card direction-card">
+                        <div class="text-center mb-6">
+                            <div class="direction-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Групповые консультации</h3>
+                            <p class="text-foreground-muted">Работа в малых группах до 5 участников</p>
+                        </div>
+
+                        <div class="flex-grow">
+                            <h4 class="font-semibold mb-3 text-primary">Преимущества:</h4>
+                            <ul class="space-y-2 mb-6">
+                                <li class="advantage-item">
+                                    <span class="bullet">•</span>
+                                    <span>Поддержка единомышленников</span>
+                                </li>
+                                <li class="advantage-item">
+                                    <span class="bullet">•</span>
+                                    <span>Обмен опытом</span>
+                                </li>
+                                <li class="advantage-item">
+                                    <span class="bullet">•</span>
+                                    <span>Более доступная стоимость</span>
+                                </li>
+                                <li class="advantage-item">
+                                    <span class="bullet">•</span>
+                                    <span>Развитие социальных навыков</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="direction-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Длительность:</span>
+                                <span class="detail-value">60-90 минут</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Формат:</span>
+                                <span class="detail-value">Видеоконференция или чат</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="psychology-card direction-card">
+                        <div class="text-center mb-6">
+                            <div class="direction-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Семейные консультации</h3>
+                            <p class="text-foreground-muted">Работа с парами и семьями до 2 взрослых участников</p>
+                        </div>
+
+                        <div class="flex-grow">
+                            <h4 class="font-semibold mb-3 text-primary">Преимущества:</h4>
+                            <ul class="space-y-2 mb-6">
+                                <li class="advantage-item">
+                                    <span class="bullet">•</span>
+                                    <span>Улучшение отношений</span>
+                                </li>
+                                <li class="advantage-item">
+                                    <span class="bullet">•</span>
+                                    <span>Разрешение конфликтов</span>
+                                </li>
+                                <li class="advantage-item">
+                                    <span class="bullet">•</span>
+                                    <span>Работа с парой специально обученного психолога</span>
+                                </li>
+                                <li class="advantage-item">
+                                    <span class="bullet">•</span>
+                                    <span>Нейтральная безопасная среда</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="direction-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Длительность:</span>
+                                <span class="detail-value">60-90 минут</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Формат:</span>
+                                <span class="detail-value">Видеосвязь или совместный чат</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacts Section -->
+        <section id="contacts" class="section-padding bg-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-6 gradient-text">Контакты</h2>
+                    <p class="text-xl text-foreground max-w-3xl mx-auto">
+                        Свяжитесь с нами удобным способом. Мы готовы ответить на ваши вопросы 
+                        и помочь выбрать подходящий формат консультации
+                    </p>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <!-- Contact Form -->
+                    <div class="psychology-card">
+                        <h3 class="text-2xl font-bold mb-6">Связаться с нами</h3>
+                        <form id="contactForm" class="space-y-6">
+                            <div>
+                                <label for="name" class="form-label">
+                                    Имя (необязательно, можно анонимно)
+                                </label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Ваше имя или псевдоним"
+                                    class="form-input"
+                                />
+                            </div>
+
+                            <div>
+                                <label for="email" class="form-label">
+                                    Email <span class="text-primary">*</span>
+                                </label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    required
+                                    placeholder="your@email.com"
+                                    class="form-input"
+                                />
+                            </div>
+
+                            <div>
+                                <label for="telegram" class="form-label">
+                                    Telegram (необязательно)
+                                </label>
+                                <input
+                                    type="text"
+                                    id="telegram"
+                                    name="telegram"
+                                    placeholder="@username"
+                                    class="form-input"
+                                />
+                            </div>
+
+                            <div>
+                                <label for="topic" class="form-label">
+                                    Тема обращения <span class="text-primary">*</span>
+                                </label>
+                                <textarea
+                                    id="topic"
+                                    name="topic"
+                                    required
+                                    rows="4"
+                                    placeholder="Опишите вашу ситуацию или вопрос..."
+                                    class="form-textarea"
+                                ></textarea>
+                            </div>
+
+                            <button type="submit" class="cta-button w-full">
+                                <i class="fas fa-paper-plane mr-2"></i>
+                                Отправить сообщение
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Methods -->
+                    <div class="space-y-6">
+                        <div class="psychology-card contact-method" onclick="window.location.href='mailto:contact@psyhelp.click'">
+                            <div class="flex items-start gap-4">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold mb-1">Email</h4>
+                                    <p class="text-primary font-medium mb-2">contact@psyhelp.click</p>
+                                    <p class="text-sm text-foreground-muted">Напишите нам на почту для подробной консультации</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="psychology-card contact-method" onclick="window.open('https://t.me/psyhelpclick', '_blank')">
+                            <div class="flex items-start gap-4">
+                                <div class="contact-icon">
+                                    <i class="fab fa-telegram"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold mb-1">Telegram</h4>
+                                    <p class="text-primary font-medium mb-2">@psyhelpclick</p>
+                                    <p class="text-sm text-foreground-muted">Быстрая связь через наш Telegram бот</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="psychology-card contact-method">
+                            <div class="flex items-start gap-4">
+                                <div class="contact-icon">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold mb-1">Онлайн звонок</h4>
+                                    <p class="text-primary font-medium mb-2">Записаться на сессию</p>
+                                    <p class="text-sm text-foreground-muted">Забронируйте время для видеоконсультации</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-footer border-t">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="static/images/logo.png" alt="PsyHelp.Click Logo" class="h-10 w-10">
+                        <div>
+                            <h3 class="text-xl font-bold gradient-text">PsyHelp.Click</h3>
+                            <p class="text-sm text-muted">Психологическая поддержка онлайн</p>
+                        </div>
+                    </div>
+                    <p class="text-foreground-muted text-sm leading-relaxed">
+                        Профессиональная психологическая помощь с использованием современных технологий. 
+                        Доступно, конфиденциально, эффективно.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Услуги</h4>
+                    <ul class="space-y-2 text-sm text-foreground-muted">
+                        <li>Индивидуальные консультации</li>
+                        <li>Групповые сессии</li>
+                        <li>Семейная терапия</li>
+                        <li>Онлайн поддержка 24/7</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Связь</h4>
+                    <ul class="space-y-2 text-sm text-foreground-muted">
+                        <li>Email: contact@psyhelp.click</li>
+                        <li>Telegram: @psyhelpclick</li>
+                        <li>Сайт: www.psyhelp.click</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t mt-8 pt-8 text-center">
+                <p class="text-sm text-foreground-muted">
+                    © 2024 PsyHelp.Click. Все права защищены. 
+                    <span class="block mt-1">
+                        Конфиденциальность и безопасность ваших данных гарантированы.
+                    </span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notification -->
+    <div id="notification" class="notification hidden">
+        <div class="notification-content">
+            <i class="fas fa-check-circle notification-icon"></i>
+            <span class="notification-text"></span>
+        </div>
+    </div>
+
+    <script src="static/main.js"></script>
+</body>
+</html>
