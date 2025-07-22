@@ -388,6 +388,29 @@ footer {
   height: auto;
 }
 
+.about-project-section {
+  background: none;
+  box-shadow: none;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+.about-project-section h2 {
+  text-align: center;
+  color: var(--main);
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+
+.about-project-section p {
+  font-size: 1.15rem;
+  color: #4f7c6f;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  line-height: 1.6;
+}
+
 @media (max-width: 900px) {
   .direction-plates {
     flex-direction: column;
