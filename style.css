@@ -72,7 +72,7 @@ nav a:hover, nav a.active {
 .about-section {
   background: none;
   box-shadow: none;
-  margin: 3rem 0 2rem 0;
+  margin: 3rem 0 3.5rem 0; /* увеличен нижний отступ */
   padding: 0;
 }
 
@@ -244,6 +244,7 @@ nav a:hover, nav a.active {
   gap: 2rem;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .contact-form-block {
@@ -295,7 +296,9 @@ nav a:hover, nav a.active {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-  justify-content: flex-start;
+  justify-content: flex-end; /* опускаем вниз */
+  height: 100%;
+  min-height: 340px; /* подберите под вашу форму */
 }
 
 .contact-plate {
@@ -391,8 +394,13 @@ footer {
 .about-project-section {
   background: none;
   box-shadow: none;
-  margin: 2rem 0;
+  margin: 0 0 2rem 0;
   padding: 0;
+}
+
+.about-project-section h2,
+.about-project-section p {
+  text-align: center;
 }
 
 .about-project-section h2 {
