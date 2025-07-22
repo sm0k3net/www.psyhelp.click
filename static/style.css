@@ -1,0 +1,690 @@
+/* PsyHelp.Click Styles */
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Psychology theme colors */
+    --primary-color: hsl(187, 47%, 55%);
+    --secondary-color: hsl(20, 43%, 75%);
+    --background-color: hsl(0, 0%, 100%);
+    --foreground-color: hsl(213, 27%, 20%);
+    --light-background: hsl(210, 40%, 98%);
+    --muted-color: hsl(215, 16%, 47%);
+    --border-color: hsl(214, 32%, 91%);
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    --gradient-subtle: linear-gradient(180deg, var(--background-color), var(--light-background));
+    
+    /* Shadows */
+    --shadow-elegant: 0 10px 30px -10px hsla(187, 47%, 55%, 0.2);
+    --shadow-glow: 0 0 40px hsla(187, 47%, 55%, 0.1);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--foreground-color);
+    background-color: var(--background-color);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.text-4xl {
+    font-size: 2.25rem;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+/* Colors */
+.gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-foreground {
+    color: var(--foreground-color);
+    opacity: 0.8;
+}
+
+.text-foreground-muted {
+    color: var(--muted-color);
+}
+
+.text-muted {
+    color: var(--muted-color);
+}
+
+/* Layout Utilities */
+.max-w-7xl {
+    max-width: 80rem;
+}
+
+.max-w-4xl {
+    max-width: 56rem;
+}
+
+.max-w-3xl {
+    max-width: 48rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.items-start {
+    align-items: flex-start;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.space-x-3 > * + * {
+    margin-left: 0.75rem;
+}
+
+.space-x-8 > * + * {
+    margin-left: 2rem;
+}
+
+.space-y-2 > * + * {
+    margin-top: 0.5rem;
+}
+
+.space-y-6 > * + * {
+    margin-top: 1.5rem;
+}
+
+.gap-4 {
+    gap: 1rem;
+}
+
+.gap-6 {
+    gap: 1.5rem;
+}
+
+.gap-8 {
+    gap: 2rem;
+}
+
+.gap-12 {
+    gap: 3rem;
+}
+
+.grid {
+    display: grid;
+}
+
+/* Responsive Grid */
+.grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 640px) {
+    .sm\\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .sm\\:px-6 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .md\\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .md\\:grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .md\\:flex {
+        display: flex;
+    }
+    .md\\:hidden {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .lg\\:grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .lg\\:grid-cols-4 {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    .lg\\:px-8 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+/* Spacing */
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.pt-20 {
+    padding-top: 5rem;
+}
+
+.pt-8 {
+    padding-top: 2rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-8 {
+    margin-bottom: 2rem;
+}
+
+.mb-16 {
+    margin-bottom: 4rem;
+}
+
+.mt-8 {
+    margin-top: 2rem;
+}
+
+.mt-16 {
+    margin-top: 4rem;
+}
+
+.mr-2 {
+    margin-right: 0.5rem;
+}
+
+/* Header */
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border-color);
+    z-index: 1000;
+}
+
+.h-20 {
+    height: 5rem;
+}
+
+.h-12 {
+    height: 3rem;
+}
+
+.w-12 {
+    width: 3rem;
+}
+
+.h-10 {
+    height: 2.5rem;
+}
+
+.w-10 {
+    width: 2.5rem;
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--foreground-color);
+    text-decoration: none;
+    transition: var(--transition-smooth);
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary-color);
+    background-color: hsla(187, 47%, 55%, 0.1);
+}
+
+/* Mobile Menu */
+.mobile-menu-btn {
+    background: none;
+    border: none;
+    color: var(--foreground-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    background-color: var(--background-color);
+    border-top: 1px solid var(--border-color);
+}
+
+.mobile-nav-link {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: var(--foreground-color);
+    text-decoration: none;
+    border-radius: 0.375rem;
+    transition: var(--transition-smooth);
+}
+
+.mobile-nav-link:hover {
+    background-color: hsla(187, 47%, 55%, 0.1);
+    color: var(--primary-color);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Sections */
+.section-padding {
+    padding: 4rem 1rem;
+}
+
+.bg-white {
+    background-color: var(--background-color);
+}
+
+.bg-light {
+    background-color: var(--light-background);
+}
+
+.bg-gradient {
+    background: var(--gradient-subtle);
+}
+
+.bg-footer {
+    background: linear-gradient(to right, 
+        hsla(213, 27%, 20%, 0.05), 
+        hsla(187, 47%, 55%, 0.05));
+}
+
+/* Cards and Components */
+.psychology-card {
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    transition: var(--transition-smooth);
+    cursor: pointer;
+}
+
+.psychology-card:hover {
+    box-shadow: var(--shadow-elegant);
+    transform: scale(1.05) translateY(-0.25rem);
+}
+
+.advantage-icon {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 auto 1rem;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.25rem;
+}
+
+/* Consultation Circles */
+.consultation-circle {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 2px solid #d1d5db;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: var(--transition-smooth);
+    cursor: pointer;
+    background-color: var(--background-color);
+}
+
+.consultation-circle:hover {
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: white;
+    transform: scale(1.1);
+}
+
+.consultation-icon {
+    font-size: 3rem;
+    margin-bottom: 0.75rem;
+    transition: var(--transition-smooth);
+}
+
+.consultation-circle:hover .consultation-icon {
+    transform: scale(1.1);
+}
+
+/* Direction Cards */
+.direction-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.direction-icon {
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto 1rem;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+}
+
+.advantage-item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.bullet {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+    margin-top: 0.125rem;
+}
+
+.direction-details {
+    border-top: 1px solid var(--border-color);
+    padding-top: 1rem;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.detail-label {
+    color: var(--muted-color);
+}
+
+.detail-value {
+    font-weight: 500;
+}
+
+/* Forms */
+.form-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--foreground-color);
+    margin-bottom: 0.5rem;
+    opacity: 0.8;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: var(--transition-smooth);
+    font-family: inherit;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px hsla(187, 47%, 55%, 0.1);
+}
+
+.form-textarea {
+    resize: none;
+}
+
+/* Buttons */
+.cta-button {
+    background: var(--gradient-primary);
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    box-shadow: var(--shadow-elegant);
+    transform: scale(1.02);
+}
+
+.w-full {
+    width: 100%;
+}
+
+/* Contact Methods */
+.contact-method {
+    cursor: pointer;
+}
+
+.contact-icon {
+    width: 3rem;
+    height: 3rem;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+/* Notification */
+.notification {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow-elegant);
+    z-index: 1001;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-out;
+}
+
+.notification.show {
+    transform: translateX(0);
+}
+
+.notification-content {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.notification-icon {
+    font-size: 1.25rem;
+}
+
+/* Borders */
+.border-t {
+    border-top: 1px solid var(--border-color);
+}
+
+.border-b {
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Utility Classes */
+.leading-relaxed {
+    line-height: 1.625;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.flex-shrink-0 {
+    flex-shrink: 0;
+}
+
+.opacity-80 {
+    opacity: 0.8;
+}
+
+/* Responsive Utilities */
+@media (max-width: 767px) {
+    .hidden {
+        display: none;
+    }
+    
+    .md\\:hidden {
+        display: block;
+    }
+    
+    .md\\:flex {
+        display: none;
+    }
+    
+    .section-padding {
+        padding: 2rem 1rem;
+    }
+    
+    .text-4xl {
+        font-size: 1.875rem;
+    }
+    
+    .consultation-circle {
+        width: 8rem;
+        height: 8rem;
+    }
+    
+    .consultation-icon {
+        font-size: 2rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+button:focus,
+input:focus,
+textarea:focus,
+a:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+    .sticky-header,
+    .notification {
+        display: none;
+    }
+    
+    .psychology-card {
+        break-inside: avoid;
+    }
+}
