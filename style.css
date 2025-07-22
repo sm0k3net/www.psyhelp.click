@@ -105,6 +105,45 @@ nav a:hover, nav a.active {
   margin-bottom: 2rem;
 }
 
+.about-buttons-new {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.btn {
+  padding: 0.9rem 2.2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.btn-main {
+  background: #4fbea5;
+  color: #fff;
+  border: none;
+}
+
+.btn-main:hover {
+  background: #4f46e5;
+}
+
+.btn-outline {
+  background: #fff;
+  color: #4fbea5;
+  border: 2px solid #4fbea5;
+}
+
+.btn-outline:hover {
+  background: #e5b6b6;
+  color: #fff;
+  border-color: #e5b6b6;
+}
+
 .advantages-list {
   margin-top: 1.5rem;
   padding-left: 1.2rem;
