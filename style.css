@@ -36,7 +36,8 @@ body {
 }
 
 .logo {
-  height: 56px;
+  height: 64px;
+  width: 64px;
   margin-right: 1rem;
 }
 
@@ -68,10 +69,40 @@ nav a:hover, nav a.active {
   box-shadow: var(--plate-shadow);
 }
 
+.about-section {
+  background: none;
+  box-shadow: none;
+  margin: 3rem 0 2rem 0;
+  padding: 0;
+}
+
 .about-section h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: var(--main);
+}
+
+.about-hero {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.about-hero-new {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.about-h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--main);
+  margin-bottom: 1.2rem;
+}
+
+.about-p {
+  font-size: 1.2rem;
+  color: #4f7c6f;
+  margin-bottom: 2rem;
 }
 
 .advantages-list {
@@ -272,74 +303,6 @@ footer {
   border-top: 1px solid #eee;
 }
 
-.about-hero {
-  text-align: center;
-  padding-bottom: 2rem;
-}
-
-.about-title-main {
-  display: block;
-  font-size: 2.8rem;
-  font-weight: 700;
-  color: var(--main);
-  margin-bottom: 0.2em;
-}
-
-.about-title-gradient {
-  display: block;
-  font-size: 2.8rem;
-  font-weight: 700;
-  background: linear-gradient(90deg, #4fbea5 0%, #e5b6b6 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 0.2em;
-}
-
-.about-subtitle {
-  font-size: 1.3rem;
-  color: #4f7c6f;
-  margin: 1.5rem 0 2rem 0;
-}
-
-.about-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-bottom: 2.5rem;
-}
-
-.btn {
-  padding: 0.9rem 2.2rem;
-  border-radius: 8px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: background 0.2s, color 0.2s, border 0.2s;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-}
-
-.btn-main {
-  background: #4fbea5;
-  color: #fff;
-  border: none;
-}
-
-.btn-main:hover {
-  background: #4f46e5;
-}
-
-.btn-outline {
-  background: #fff;
-  color: #4fbea5;
-  border: 2px solid #4fbea5;
-}
-
-.btn-outline:hover {
-  background: #e5b6b6;
-  color: #fff;
-  border-color: #e5b6b6;
-}
-
 .about-advantages {
   display: flex;
   justify-content: center;
@@ -359,6 +322,30 @@ footer {
 .adv-icon {
   font-size: 2.2rem;
   margin-bottom: 0.5rem;
+}
+
+.about-icons-row {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.about-icon-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.05rem;
+  color: var(--main);
+  min-width: 120px;
+}
+
+.about-icon-svg {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.5rem;
+  opacity: 0.85;
 }
 
 @media (max-width: 900px) {
